@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Studios - Iron Man</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Configuração da cor personalizada via CDN
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'vinho-roxo': '#8A2D5E', // Usando a cor que você já definiu no H1
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .rotated-text {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="min-h-screen flex flex-col">
+        <header class="flex justify-between items-center p-4 md:p-6 lg:p-8 border-b border-gray-200">
+            <div class="flex items-center">
+                <img src="./img/marvel-logo-34288 1.png" alt="Marvel Studios Logo" class="h-8 md:h-10 lg:h-12">
+            </div>
+            <nav class="flex space-x-1 md:flex space-x-6 lg:space-x-8">
+                <a href="#" class="text-gray-600 hover:text-red-600 font-semibold">Home</a>
+                <a href="#" class="text-gray-600 hover:text-red-600 font-semibold">Avengers</a>
+                <a href="#" class="hidden md:block text-gray-600 hover:text-red-600 font-semibold">Celestials</a>
+                <a href="#" class="text-gray-600 hover:text-red-600 font-semibold">About</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button class="md:hidden">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+                <img src="./img/Search.png" alt="Search" class="h-6 w-6 hidden md:block hover:bg-red-200 transition-colors duration-300">
+                <img src="./img/Dashboard 1.png" alt="Grid" class="h-6 w-6 hidden md:block hover:bg-red-200 transition-colors duration-300">
+                <img src="./img/user circle.png" alt="User" class="h-6 w-6 hidden md:block hover:bg-red-200 transition-colors duration-300">
+            </div>
+        </header>
+
+        <main class="flex-grow flex flex-col md:flex-row p-4 md:p-8 lg:p-12 relative items-center justify-center">
+
+            <aside class="md:flex flex-col space-y-4 fixed bottom-4 left-4 z-10">
+                <a href="#" class="hover:opacity-75">
+                    <img src="./img/github.png" alt="GitHub" class="h-6 w-6">
+                </a>
+                <a href="#" class="hover:opacity-75">
+                    <img src="./img/Figma - Original.png" alt="Figma" class="h-6 w-6">
+                </a>
+                <a href="#" class="hover:opacity-75">
+                    <img src="./img/Twitter - Original.png" alt="Twitter" class="h-6 w-6">
+                </a>
+                <a href="#" class="hover:opacity-75">
+                    <img src="./img/Instagram - Original.png" alt="Instagram" class="h-6 w-6">
+                </a>
+            </aside>
+
+            <div class="flex flex-col md:flex-row items-center justify-center w-full md:w-[90%] lg:w-[80%] xl:w-[70%] 2xl:w-[60%] relative">
+
+                <section class="flex flex-col w-full md:w-1/2 lg:w-2/5 pr-0 md:pr-8 mb-8 md:mb-0 text-center md:text-left">
+                    <p class="text-sm uppercase text-gray-500 mb-2">Marvel Character</p>
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-[#8A2D5E] mb-4">IRON MAN</h1>
+                    <h2 class="hidden md:block text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">Tony Stark</h2>
+                    <p class="hidden md:block text-gray-700 leading-relaxed mb-8 max-w-lg mx-auto md:mx-0">
+                        Iron Man is a superhero appearing in American comic books published by Marvel Comics. Each of Tony's suits provides a full range of telecommunications, sophisticated artificial intelligence capable of piloting Tony to safety should he be rendered unconscious.
+                    </p>
+                    <button class="bg-gray-800 text-white py-3 px-6 rounded-lg self-center md:self-start hover:bg-red-700 transition-colors duration-300">
+                        Are you Marvel fan?
+                    </button>
+                </section>
+
+                <section class="flex-grow flex justify-center items-center w-full md:w-1/2 lg:w-3/5 relative">
+                    <img src="./img/avengers-iron-man-person-human-graphics-art-transparent-png-683595 1.png" alt="Iron Man" class="max-h-[80vh] md:max-h-[90vh] lg:max-h-[95vh] object-contain relative z-20">
+                </section>
+
+                <div class="absolute top-1/2 right-0 transform -translate-y-1/2 z-10">
+                    <p class="rotated-text text-[110px] md:text-[210px] lg:text-[210px] xl:text-[210px] font-bold text-[#8A2D5E] opacity-70">
+                        iron man
+                    </p>
+                </div>
+            </div> </main>
+
+        <footer class="p-4 md:p-6 lg:p-8 text-right border-t border-gray-200">
+            <a href="#" class="text-gray-600 hover:text-red-600 flex items-center justify-end">
+                Next Marvel Character
+                <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path></svg>
+            </a>
+        </footer>
+    </div>
+
+</body>
+</html>
